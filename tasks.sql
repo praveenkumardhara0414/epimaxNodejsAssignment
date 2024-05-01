@@ -1,0 +1,12 @@
+-- CREATE TABLE Users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, password_hash TEXT);
+-- PRAGMA TABLE_INFO (Users);
+-- CREATE TABLE Tasks (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, status TEXT, assignee_id INTEGER, created_at DATETIME, updated_at DATETIME, FOREIGN KEY(assignee_id) REFERENCES Users(id));
+-- INSERT INTO
+-- Tasks(title, description, status, assignee_id, created_at, updated_at)
+-- VALUES
+-- ('Python', 'Programming Language', 'Completed', 1, '2023-04-10 10:00:00', '2023-06-15 20:15:00'),
+-- ('JavaScript', 'Scripting Language', 'Completed', 2, '2023-05-12 10:00:00', '2023-07-15 21:15:00'),
+-- ('HTML', 'Markup Language', 'Completed', 3, '2022-11-10 10:00:00', '2023-01-15 15:35:00'),
+-- ('CSS', 'Stylesheet Language', 'Completed', 4, '2022-12-10 10:00:00', '2023-02-15 10:15:00'),
+-- ('SQLite', 'Database', 'Completed', 5, '2023-05-10 10:00:00', '2023-06-25 18:15:00');
+SELECT * FROM Tasks;
